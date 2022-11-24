@@ -71,7 +71,7 @@ resource aws_cloudwatch_event_rule fargate_spot_rule {
   "detail-type": ["ECS Task State Change"],
   "detail": {
     "clusterArn": ["${var.cluster_arn}"],
-    "stoppedReason": ["Your Spot Task was interrupted."]
+    "stoppedReason": ["${var.name_prefix}-${var.wenv}: Your Spot Task was interrupted =8-]"]
   }
 }
 EOF
