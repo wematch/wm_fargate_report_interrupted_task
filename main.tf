@@ -1,7 +1,7 @@
 data archive_file zip {
   type        = "zip"
-  source_file = "build/aws-lambda-deregister-target-go"
-  output_path = "build/aws-lambda-deregister-target-go.zip"
+  source_file = "script.go"
+  output_path = "script.zip"
 }
 
 resource aws_iam_role iam_for_lambda {
